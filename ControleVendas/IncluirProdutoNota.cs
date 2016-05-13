@@ -13,16 +13,16 @@ namespace ControleVendas
     public partial class IncluirProdutoNota : Form
     {
         ArrayList notaFiscalItens;
-        ArrayList estoque;
+//        CriaEstoque estoque;
         public IncluirProdutoNota()
         {
             InitializeComponent();
         }
-        public IncluirProdutoNota(ArrayList notaFiscalItens, ArrayList estoque)
+        public IncluirProdutoNota(ArrayList notaFiscalItens)
         {
             InitializeComponent();
             this.notaFiscalItens = notaFiscalItens;
-            this.estoque = estoque;
+  //          this.estoque = estoque;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -50,11 +50,14 @@ namespace ControleVendas
 
         private void textBoxCodigo_Leave(object sender, EventArgs e)
         {
+
+            CriaEstoque estoque = new CriaEstoque();
+            estoque.Criar_Estoque();
             uint ver = 0;
             string descr="";
             string unit = "";
             string cod="";
-            foreach (Produto i in estoque)
+            foreach (Produto i in estoque.getLista())
             {
                 cod = i.getCodigo().ToString();
                 if (cod.Equals(textBoxCodigo.Text))
@@ -94,6 +97,11 @@ namespace ControleVendas
                 calc = uint.Parse(textBoxQuantidade.Text) * float.Parse(textBoxUnitario.Text);
                 textBoxTotal.Text = calc.ToString();
             }
+        }
+
+        private void textBoxCodigo_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

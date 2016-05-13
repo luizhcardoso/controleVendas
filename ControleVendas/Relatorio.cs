@@ -12,25 +12,21 @@ namespace ControleVendas
 {
     public partial class Relatorio : Form
     {
-        ArrayList Estoque;
         public Relatorio()
         {
-            InitializeComponent();
-        }
-        public Relatorio(ArrayList Estoque)
-        {
-            this.Estoque = Estoque;
             InitializeComponent();
         }
 
         private void Relatorio_Load(object sender, EventArgs e)
         {
+            CriaEstoque estoque = new CriaEstoque();
+            estoque.Criar_Estoque();
 
             ListViewItem item = new ListViewItem();
             float asDensidade;
             string asAplicacao;
             string asCor;
-            foreach (Produto i in Estoque) {
+            foreach (Produto i in estoque.getLista()) {
                 {
                     if (i is Tinta)
                     {

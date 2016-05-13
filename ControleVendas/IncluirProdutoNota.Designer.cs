@@ -105,6 +105,7 @@
             this.textBoxCodigo.Name = "textBoxCodigo";
             this.textBoxCodigo.Size = new System.Drawing.Size(100, 20);
             this.textBoxCodigo.TabIndex = 1;
+            this.textBoxCodigo.TextChanged += new System.EventHandler(this.textBoxCodigo_TextChanged);
             this.textBoxCodigo.Leave += new System.EventHandler(this.textBoxCodigo_Leave);
             // 
             // textBoxQuantidade

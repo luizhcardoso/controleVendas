@@ -11,3 +11,17 @@ F:\Pessoal\Pessoal\Mestrado\Anderson\ControleVendas\ControleVendas\obj\Debug\Con
 F:\Pessoal\Pessoal\Mestrado\Anderson\ControleVendas\ControleVendas\obj\Debug\ControleVendas.Relatorio.resources
 F:\Pessoal\Pessoal\Mestrado\Anderson\ControleVendas\ControleVendas\obj\Debug\ControleVendas.Compra.resources
 F:\Pessoal\Pessoal\Mestrado\Anderson\ControleVendas\ControleVendas\obj\Debug\ControleVendas.IncluirProdutoNota.resources
+C:\Users\Reginaldo\Dropbox\Mestrado\Anderson\ControleVendas\ControleVendas\bin\Debug\ControleVendas.exe.config
+C:\Users\Reginaldo\Dropbox\Mestrado\Anderson\ControleVendas\ControleVendas\obj\Debug\ControleVendas.exe
+C:\Users\Reginaldo\Dropbox\Mestrado\Anderson\ControleVendas\ControleVendas\obj\Debug\ControleVendas.pdb
+C:\Users\Reginaldo\Dropbox\Mestrado\Anderson\ControleVendas\ControleVendas\bin\Debug\ControleVendas.exe
+C:\Users\Reginaldo\Dropbox\Mestrado\Anderson\ControleVendas\ControleVendas\bin\Debug\ControleVendas.pdb
+C:\Users\Reginaldo\Dropbox\Mestrado\Anderson\ControleVendas\ControleVendas\obj\Debug\ControleVendas.csprojResolveAssemblyReference.cache
+C:\Users\Reginaldo\Dropbox\Mestrado\Anderson\ControleVendas\ControleVendas\obj\Debug\ControleVendas.Cadastro.resources
+C:\Users\Reginaldo\Dropbox\Mestrado\Anderson\ControleVendas\ControleVendas\obj\Debug\ControleVendas.Compra.resources
+C:\Users\Reginaldo\Dropbox\Mestrado\Anderson\ControleVendas\ControleVendas\obj\Debug\ControleVendas.Form1.resources
+C:\Users\Reginaldo\Dropbox\Mestrado\Anderson\ControleVendas\ControleVendas\obj\Debug\ControleVendas.IncluirProdutoNota.resources
+C:\Users\Reginaldo\Dropbox\Mestrado\Anderson\ControleVendas\ControleVendas\obj\Debug\ControleVendas.Properties.Resources.resources
+C:\Users\Reginaldo\Dropbox\Mestrado\Anderson\ControleVendas\ControleVendas\obj\Debug\ControleVendas.Relatorio.resources
+C:\Users\Reginaldo\Dropbox\Mestrado\Anderson\ControleVendas\ControleVendas\obj\Debug\ControleVendas.csproj.GenerateResource.Cache
+C:\Users\Reginaldo\Dropbox\Mestrado\Anderson\ControleVendas\ControleVendas\obj\Debug\ControleVendas.RelatorioNotas.resources

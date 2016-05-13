@@ -14,16 +14,15 @@ namespace ControleVendas
     {
         ArrayList notaFiscal;
         ArrayList notaFiscalItens;
-        ArrayList estoque;
         public Compra()
         {
             InitializeComponent();
         }
-        public Compra(ArrayList notaFiscal, ArrayList notaFiscalItens, ArrayList estoque)
+        public Compra(ArrayList notaFiscal, ArrayList notaFiscalItens)
         {
             this.notaFiscal = notaFiscal;
             this.notaFiscalItens = notaFiscalItens;
-            this.estoque = estoque;
+
             InitializeComponent();
         }
 
@@ -39,7 +38,7 @@ namespace ControleVendas
 
         private void incluirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            IncluirProdutoNota fProdutoNota = new IncluirProdutoNota(notaFiscalItens, estoque);
+            IncluirProdutoNota fProdutoNota = new IncluirProdutoNota(notaFiscalItens);
             fProdutoNota.ShowDialog();
             listView1.Visible = false;
             listView1.Visible = true;
@@ -112,6 +111,14 @@ namespace ControleVendas
             nNota.setValor(float.Parse(textBoxValorTotal.Text));
             nNota.setListaProdutos(notaFiscalItens);
             notaFiscal.Add(nNota);
+
+            CriaEstoque estoque = new CriaEstoque();
+            estoque.Criar_Estoque();
+            foreach (ItensNotaFiscal i in nNota.getListaProdutos())
+            {
+                estoque.MovimentaEstoque(nNota.getTipo(), i.getCodigo(), i.getQuantidade());
+               // MessageBox.Show("Atualizando estoque do produto " + i.getCodigo() + " com " + i.getEstoque() + " unidades.");
+            }
             Close();
         }
     }

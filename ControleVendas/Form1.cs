@@ -17,7 +17,7 @@ namespace ControleVendas
 {
     public partial class Form1 : Form
     {
-        ArrayList Estoque = new ArrayList();
+//        ArrayList Estoque = new ArrayList();
         ArrayList Compras = new ArrayList();
         ArrayList ItensCompras = new ArrayList();
 
@@ -30,51 +30,78 @@ namespace ControleVendas
 
         private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Cadastro fCadastro = new Cadastro(Estoque);
+            Cadastro fCadastro = new Cadastro();
             fCadastro.Show();
         }
 
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            CriaEstoque estoque = new CriaEstoque();
+            estoque.Criar_Estoque();
+
             IFormatter formatter = new BinaryFormatter();
             Stream stream = new FileStream(fileEstoque, FileMode.Create, FileAccess.Write, FileShare.None);
-            formatter.Serialize(stream, this.Estoque);
+            formatter.Serialize(stream, estoque.getLista());
             stream.Close();
 
             stream = new FileStream(fileCompras, FileMode.Create, FileAccess.Write, FileShare.None);
             formatter.Serialize(stream, this.Compras);
             stream.Close();
 
-            MessageBox.Show("Serialização concluida...");
+            MessageBox.Show("Dados Salvos para uso futuro...");
             Close();
         }
 
         private void cadastrosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Relatorio fRelatorio = new Relatorio(Estoque);
+            Relatorio fRelatorio = new Relatorio();
             fRelatorio.Show();
         }
 
         private void listagemToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Compra fCompra = new Compra(Compras, ItensCompras, Estoque);
+            Compra fCompra = new Compra(Compras, ItensCompras);
             fCompra.Show();
 
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-//            string fileEstoque = "Estoque1.xml";
+            //            string fileEstoque = "Estoque1.xml";
+            Stream stream;
             IFormatter formatter = new BinaryFormatter();
-            Stream stream = new FileStream(fileEstoque, FileMode.Open, FileAccess.Read, FileShare.Read);
-            this.Estoque = (ArrayList)formatter.Deserialize(stream);
-            stream.Close();
+            if (File.Exists(fileEstoque))
+            {
+                CriaEstoque estoque = new CriaEstoque();
+                estoque.Criar_Estoque();
 
-//            string fileCompras = "Compras1.xml";
-            stream = new FileStream(fileCompras, FileMode.Open, FileAccess.Read, FileShare.Read);
-            this.Compras = (ArrayList)formatter.Deserialize(stream);
-            stream.Close();
+                stream = new FileStream(fileEstoque, FileMode.Open, FileAccess.Read, FileShare.Read);
+                foreach (Produto i in (ArrayList)formatter.Deserialize(stream))
+                {
+                    estoque.Inclui(i);
+                }
+                stream.Close();
+            }
+            //            string fileCompras = "Compras1.xml";
+            if (File.Exists(fileCompras))
+            {
+                stream = new FileStream(fileCompras, FileMode.Open, FileAccess.Read, FileShare.Read);
+                this.Compras = (ArrayList)formatter.Deserialize(stream);
+                stream.Close();
+            }
+            else
+            {
+                MessageBox.Show("Arquivo " + fileCompras + " não encontrado...");
+            }
+
+        }
+
+        private void notasFiscaisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RelatorioNotas fRelatorio = new RelatorioNotas(Compras);
+            fRelatorio.Show();
+
         }
     }
 }

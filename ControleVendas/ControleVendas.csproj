@@ -58,6 +58,8 @@
     <Compile Include="Compra.Designer.cs">
       <DependentUpon>Compra.cs</DependentUpon>
     </Compile>
+    <Compile Include="CriaEstoque.cs" />
+    <Compile Include="Estoque.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +82,12 @@
     </Compile>
     <Compile Include="Relatorio.Designer.cs">
       <DependentUpon>Relatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RelatorioNotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RelatorioNotas.Designer.cs">
+      <DependentUpon>RelatorioNotas.cs</DependentUpon>
     </Compile>
     <Compile Include="Thinner.cs" />
     <Compile Include="Tinta.cs" />
@@ -106,6 +114,9 @@
     </Compile>
     <EmbeddedResource Include="Relatorio.resx">
       <DependentUpon>Relatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatorioNotas.resx">
+      <DependentUpon>RelatorioNotas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

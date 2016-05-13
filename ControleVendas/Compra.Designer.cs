@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.bFechar = new System.Windows.Forms.Button();
+            this.bSalvar = new System.Windows.Forms.Button();
             this.labelNumero = new System.Windows.Forms.Label();
             this.textBoxNumero = new System.Windows.Forms.TextBox();
             this.labelDataEmissao = new System.Windows.Forms.Label();
@@ -53,25 +53,25 @@
             this.contextMenuItem.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // bFechar
             // 
-            this.button1.Location = new System.Drawing.Point(551, 258);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "&Fechar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.bFechar.Location = new System.Drawing.Point(551, 258);
+            this.bFechar.Name = "bFechar";
+            this.bFechar.Size = new System.Drawing.Size(75, 23);
+            this.bFechar.TabIndex = 6;
+            this.bFechar.Text = "&Fechar";
+            this.bFechar.UseVisualStyleBackColor = true;
+            this.bFechar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // bSalvar
             // 
-            this.button2.Location = new System.Drawing.Point(445, 258);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "&Salva";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.bSalvar.Location = new System.Drawing.Point(445, 258);
+            this.bSalvar.Name = "bSalvar";
+            this.bSalvar.Size = new System.Drawing.Size(75, 23);
+            this.bSalvar.TabIndex = 5;
+            this.bSalvar.Text = "&Salva";
+            this.bSalvar.UseVisualStyleBackColor = true;
+            this.bSalvar.Click += new System.EventHandler(this.button2_Click);
             // 
             // labelNumero
             // 
@@ -228,8 +228,8 @@
             this.Controls.Add(this.labelValor);
             this.Controls.Add(this.textBoxNumero);
             this.Controls.Add(this.labelNumero);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bSalvar);
+            this.Controls.Add(this.bFechar);
             this.Name = "Compra";
             this.Text = "Compra";
             this.groupBox1.ResumeLayout(false);
@@ -241,8 +241,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button bFechar;
+        private System.Windows.Forms.Button bSalvar;
         private System.Windows.Forms.Label labelNumero;
         private System.Windows.Forms.TextBox textBoxNumero;
         private System.Windows.Forms.Label labelDataEmissao;

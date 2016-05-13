@@ -65,8 +65,13 @@ namespace ControleVendas
         {
             foreach(ItensNotaFiscal a in listaProdutos)
             {
-                this.listaProdutos.Add(listaProdutos);
+                this.listaProdutos.Add(a);
             }
+        }
+
+        public ArrayList getListaProdutos()
+        {
+            return this.listaProdutos;
         }
 
     }

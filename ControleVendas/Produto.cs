@@ -54,5 +54,14 @@ namespace ControleVendas
         {
             return this.estoque;
         }
+        public void entradaEstoque(uint estoque)
+        {
+            this.estoque += estoque;
+        }
+        public void saidaEstoque(uint estoque)
+        {
+            this.estoque -= estoque;
+        }
+
     }
 }

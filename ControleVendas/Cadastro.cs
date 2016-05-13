@@ -12,17 +12,10 @@ namespace ControleVendas
 {
     public partial class Cadastro : Form
     {
-        ArrayList Estoque;
         public Cadastro()
         {
             InitializeComponent();
         }
-        public Cadastro(ArrayList Estoque)
-        {
-            InitializeComponent();
-            this.Estoque = Estoque;
-        }
-
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             textBox8.Visible = true;
@@ -31,6 +24,9 @@ namespace ControleVendas
 
         private void button1_Click(object sender, EventArgs e)
         {
+            CriaEstoque estoque = new CriaEstoque();
+            estoque.Criar_Estoque();
+
             if (radioButton1.Checked)
             {
                 Tinta pTinta = new Tinta();
@@ -42,7 +38,7 @@ namespace ControleVendas
                 pTinta.setTipoAplicacao(textBox5.Text);
                 pTinta.setCor(textBox8.Text);
                 pTinta.setEstoque(0);
-                Estoque.Add(pTinta);
+                estoque.Inclui(pTinta);
                 textBox8.Text = "";
             }
             else
@@ -55,7 +51,7 @@ namespace ControleVendas
                 pThinner.setDensidade(float.Parse(textBox6.Text));
                 pThinner.setTipoAplicacao(textBox5.Text);
                 pThinner.setEstoque(0);
-                Estoque.Add(pThinner);
+                estoque.Inclui(pThinner);
             }
             textBox1.Text = "";
             textBox2.Text = "";
