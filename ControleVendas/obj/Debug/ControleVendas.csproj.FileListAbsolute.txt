@@ -1,0 +1,13 @@
+F:\Pessoal\Pessoal\Mestrado\Anderson\ControleVendas\ControleVendas\bin\Debug\ControleVendas.exe.config
+F:\Pessoal\Pessoal\Mestrado\Anderson\ControleVendas\ControleVendas\obj\Debug\ControleVendas.csprojResolveAssemblyReference.cache
+F:\Pessoal\Pessoal\Mestrado\Anderson\ControleVendas\ControleVendas\obj\Debug\ControleVendas.Cadastro.resources
+F:\Pessoal\Pessoal\Mestrado\Anderson\ControleVendas\ControleVendas\obj\Debug\ControleVendas.Form1.resources
+F:\Pessoal\Pessoal\Mestrado\Anderson\ControleVendas\ControleVendas\obj\Debug\ControleVendas.Properties.Resources.resources
+F:\Pessoal\Pessoal\Mestrado\Anderson\ControleVendas\ControleVendas\obj\Debug\ControleVendas.csproj.GenerateResource.Cache
+F:\Pessoal\Pessoal\Mestrado\Anderson\ControleVendas\ControleVendas\bin\Debug\ControleVendas.exe
+F:\Pessoal\Pessoal\Mestrado\Anderson\ControleVendas\ControleVendas\bin\Debug\ControleVendas.pdb
+F:\Pessoal\Pessoal\Mestrado\Anderson\ControleVendas\ControleVendas\obj\Debug\ControleVendas.exe
+F:\Pessoal\Pessoal\Mestrado\Anderson\ControleVendas\ControleVendas\obj\Debug\ControleVendas.pdb
+F:\Pessoal\Pessoal\Mestrado\Anderson\ControleVendas\ControleVendas\obj\Debug\ControleVendas.Relatorio.resources
+F:\Pessoal\Pessoal\Mestrado\Anderson\ControleVendas\ControleVendas\obj\Debug\ControleVendas.Compra.resources
+F:\Pessoal\Pessoal\Mestrado\Anderson\ControleVendas\ControleVendas\obj\Debug\ControleVendas.IncluirProdutoNota.resources
