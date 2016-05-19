@@ -12,6 +12,15 @@ namespace ControleVendas
 {
     public partial class Relatorio : Form
     {
+        Form Venda;
+        int valor = 0;
+
+        private Venda venda = null;
+        public Relatorio(Venda _venda)
+        {
+            this.venda = _venda;
+            InitializeComponent();
+        }
         public Relatorio()
         {
             InitializeComponent();
@@ -26,7 +35,8 @@ namespace ControleVendas
             float asDensidade;
             string asAplicacao;
             string asCor;
-            foreach (Produto i in estoque.getLista()) {
+            
+foreach (Produto i in estoque.getLista()) {
                 {
                     if (i is Tinta)
                     {
@@ -60,6 +70,39 @@ namespace ControleVendas
         {
             Close();
         }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listView1_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (listView1.SelectedItems.Count != 0)
+            {
+                if (listView1.SelectedItems[0].Selected)
+                {
+                    Tinta t = new Tinta();
+                    t.setCodigo(uint.Parse(listView1.FocusedItem.SubItems[0].Text));
+                    t.setCor(listView1.FocusedItem.SubItems[1].Text);
+                    t.setDescricao(listView1.FocusedItem.SubItems[2].Text);
+                    t.setUnidade(listView1.FocusedItem.SubItems[3].Text);
+
+                    venda.escreveListView("kkkkkkkk");
+                    
+                    
+                    venda.Refresh();
+    }
+
+
+            }
+            }
+
+      public int getValor()
+        {
+            return valor;
+        }
+       
     }
 }
 

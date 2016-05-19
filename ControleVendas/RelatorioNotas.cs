@@ -51,5 +51,10 @@ namespace ControleVendas
                 textBox1.Text += "         Total da Nota: R$ " + String.Format(CultureInfo.InvariantCulture,"{0:0.00}", total)+nl;
             }
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

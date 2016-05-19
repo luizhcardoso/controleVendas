@@ -25,3 +25,7 @@ C:\Users\Reginaldo\Dropbox\Mestrado\Anderson\ControleVendas\ControleVendas\obj\D
 C:\Users\Reginaldo\Dropbox\Mestrado\Anderson\ControleVendas\ControleVendas\obj\Debug\ControleVendas.Relatorio.resources
 C:\Users\Reginaldo\Dropbox\Mestrado\Anderson\ControleVendas\ControleVendas\obj\Debug\ControleVendas.csproj.GenerateResource.Cache
 C:\Users\Reginaldo\Dropbox\Mestrado\Anderson\ControleVendas\ControleVendas\obj\Debug\ControleVendas.RelatorioNotas.resources
+C:\Users\LUIZAO\Documents\Visual Studio 2015\Projects\ControleVendas\ControleVendas\bin\Debug\ControleVendas.exe.config
+C:\Users\LUIZAO\Documents\Visual Studio 2015\Projects\ControleVendas\ControleVendas\obj\Debug\ControleVendas.exe
+C:\Users\LUIZAO\Documents\Visual Studio 2015\Projects\ControleVendas\ControleVendas\obj\Debug\ControleVendas.pdb
+C:\Users\LUIZAO\Documents\Visual Studio 2015\Projects\ControleVendas\ControleVendas\obj\Debug\ControleVendas.csprojResolveAssemblyReference.cache

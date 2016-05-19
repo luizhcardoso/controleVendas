@@ -110,11 +110,11 @@ namespace ControleVendas
             nNota.setTipo('E');
             nNota.setValor(float.Parse(textBoxValorTotal.Text));
             nNota.setListaProdutos(notaFiscalItens);
-            notaFiscal.Add(nNota);
+            notaFiscal.Add(nNota);//coloca no arrray
 
             CriaEstoque estoque = new CriaEstoque();
             estoque.Criar_Estoque();
-            foreach (ItensNotaFiscal i in nNota.getListaProdutos())
+            foreach (ItensNotaFiscal i in nNota.getListaProdutos())//cria foreach p imprimi listview
             {
                 estoque.MovimentaEstoque(nNota.getTipo(), i.getCodigo(), i.getQuantidade());
                // MessageBox.Show("Atualizando estoque do produto " + i.getCodigo() + " com " + i.getEstoque() + " unidades.");

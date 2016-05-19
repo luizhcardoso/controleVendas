@@ -18,8 +18,8 @@ namespace ControleVendas
     public partial class Form1 : Form
     {
 //        ArrayList Estoque = new ArrayList();
-        ArrayList Compras = new ArrayList();
-        ArrayList ItensCompras = new ArrayList();
+        static ArrayList Compras = new ArrayList();
+        static ArrayList ItensCompras = new ArrayList();
 
         string fileEstoque = "Estoque1.xml";
         string fileCompras = "Compras1.xml";
@@ -46,7 +46,7 @@ namespace ControleVendas
             stream.Close();
 
             stream = new FileStream(fileCompras, FileMode.Create, FileAccess.Write, FileShare.None);
-            formatter.Serialize(stream, this.Compras);
+            formatter.Serialize(stream, Compras);
             stream.Close();
 
             MessageBox.Show("Dados Salvos para uso futuro...");
@@ -87,7 +87,7 @@ namespace ControleVendas
             if (File.Exists(fileCompras))
             {
                 stream = new FileStream(fileCompras, FileMode.Open, FileAccess.Read, FileShare.Read);
-                this.Compras = (ArrayList)formatter.Deserialize(stream);
+                Compras = (ArrayList)formatter.Deserialize(stream);
                 stream.Close();
             }
             else
@@ -102,6 +102,36 @@ namespace ControleVendas
             RelatorioNotas fRelatorio = new RelatorioNotas(Compras);
             fRelatorio.Show();
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Cadastro fCadastro = new Cadastro();
+            fCadastro.Show();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            Compra fCompra = new Compra(Compras, ItensCompras);
+            fCompra.Show();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            RelatorioNotas fRelatorio = new RelatorioNotas(Compras);
+            fRelatorio.Show();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            Relatorio fRelatorio = new Relatorio();
+            fRelatorio.Show();
+        }
+
+        private void vendaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Venda venda = new Venda();
+            venda.Show();
         }
     }
 }

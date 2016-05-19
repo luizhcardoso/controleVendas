@@ -9,6 +9,7 @@ namespace ControleVendas
 {
     class CriaEstoque
     {
+        
         private static Estoque x;
 
         public Estoque Criar_Estoque()

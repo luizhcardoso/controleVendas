@@ -1,6 +1,6 @@
-singlenton - para nao instanciar a base de dados duas veses, serializacao, ele deixa um objeto ser instanciado somente uma vez, para que nao haja duplicidade.
+*****singlenton - para nao instanciar a base de dados duas veses, serializacao, ele deixa um objeto ser instanciado somente uma vez, para que nao haja duplicidade.
 
-memento - para serializar os arquivos na base no caso um arquivo de txt.
+****memento - para serializar os arquivos na base no caso um arquivo de txt.
 
 facede- interface para acessar os objetos
 
@@ -8,4 +8,6 @@ abtracfactory - definir tintas e produtos
 
 templante  - para criar relatorios  
 
-interator - foreach
+****iterator - foreach
+
+

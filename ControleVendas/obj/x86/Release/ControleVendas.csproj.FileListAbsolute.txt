@@ -1,0 +1,14 @@
+C:\Users\LUIZAO\Documents\Visual Studio 2015\Projects\ControleVendas\ControleVendas\bin\x86\Release\ControleVendas.exe.config
+C:\Users\LUIZAO\Documents\Visual Studio 2015\Projects\ControleVendas\ControleVendas\bin\x86\Release\ControleVendas.exe
+C:\Users\LUIZAO\Documents\Visual Studio 2015\Projects\ControleVendas\ControleVendas\bin\x86\Release\ControleVendas.pdb
+C:\Users\LUIZAO\Documents\Visual Studio 2015\Projects\ControleVendas\ControleVendas\obj\x86\Release\ControleVendas.Cadastro.resources
+C:\Users\LUIZAO\Documents\Visual Studio 2015\Projects\ControleVendas\ControleVendas\obj\x86\Release\ControleVendas.Compra.resources
+C:\Users\LUIZAO\Documents\Visual Studio 2015\Projects\ControleVendas\ControleVendas\obj\x86\Release\ControleVendas.Form1.resources
+C:\Users\LUIZAO\Documents\Visual Studio 2015\Projects\ControleVendas\ControleVendas\obj\x86\Release\ControleVendas.IncluirProdutoNota.resources
+C:\Users\LUIZAO\Documents\Visual Studio 2015\Projects\ControleVendas\ControleVendas\obj\x86\Release\ControleVendas.Properties.Resources.resources
+C:\Users\LUIZAO\Documents\Visual Studio 2015\Projects\ControleVendas\ControleVendas\obj\x86\Release\ControleVendas.Relatorio.resources
+C:\Users\LUIZAO\Documents\Visual Studio 2015\Projects\ControleVendas\ControleVendas\obj\x86\Release\ControleVendas.RelatorioNotas.resources
+C:\Users\LUIZAO\Documents\Visual Studio 2015\Projects\ControleVendas\ControleVendas\obj\x86\Release\ControleVendas.Venda.resources
+C:\Users\LUIZAO\Documents\Visual Studio 2015\Projects\ControleVendas\ControleVendas\obj\x86\Release\ControleVendas.csproj.GenerateResource.Cache
+C:\Users\LUIZAO\Documents\Visual Studio 2015\Projects\ControleVendas\ControleVendas\obj\x86\Release\ControleVendas.exe
+C:\Users\LUIZAO\Documents\Visual Studio 2015\Projects\ControleVendas\ControleVendas\obj\x86\Release\ControleVendas.pdb
